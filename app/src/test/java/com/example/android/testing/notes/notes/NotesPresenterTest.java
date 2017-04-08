@@ -16,13 +16,11 @@
 
 package com.example.android.testing.notes.notes;
 
-import com.google.common.collect.Lists;
-
 import com.example.android.testing.notes.data.Note;
 import com.example.android.testing.notes.data.NotesRepository;
 import com.example.android.testing.notes.data.NotesRepository.LoadNotesCallback;
+import com.google.common.collect.Lists;
 
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
@@ -90,12 +88,12 @@ public class NotesPresenterTest {
 
     @Test
     public void clickOnFab_ShowsAddsNoteUi() {
-        fail("Implement in step 6");
+//        fail("Implement in step 6");
 //        // When adding a new note
-//        mNotesPresenter.addNewNote();
+        mNotesPresenter.addNewNote();
 //
 //        // Then add note UI is shown
-//        verify(mNotesView).showAddNote();
+        verify(mNotesView).showAddNote();
     }
 
     @Test
